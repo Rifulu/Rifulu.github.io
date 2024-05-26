@@ -1,0 +1,106 @@
+/* Réinitialisation des styles par défaut */
+html, body, header, nav, ul, li, section, footer {
+    margin: 0;
+    padding: 0;
+}
+
+/* Styles généraux */
+body {
+    font-family: Arial, sans-serif; /* Police de caractères par défaut */
+    line-height: 1.6; /* Hauteur de ligne pour le texte */
+}
+
+header {
+    background-color: #333; /* Couleur de fond de l'en-tête */
+    color: #fff; /* Couleur du texte de l'en-tête */
+    padding: 20px; /* Espace intérieur de l'en-tête */
+}
+
+header h1 {
+    margin: 0; /* Supprimer les marges autour du titre principal */
+}
+
+nav ul {
+    list-style-type: none; /* Supprimer les puces de liste */
+}
+
+nav ul li {
+    display: inline; /* Afficher les éléments de la liste en ligne */
+    margin-right: 20px; /* Marge à droite entre les éléments de la liste */
+}
+
+nav ul li a {
+    color: #fff; /* Couleur du texte des liens */
+    text-decoration: none; /* Supprimer les soulignements des liens */
+}
+
+/* Styles pour la section "À propos" */
+#about {
+    padding: 50px 0; /* Espace intérieur de la section "À propos" */
+    text-align: center; /* Centrer le contenu de la section */
+}
+
+.about-content {
+    display: flex; /* Utiliser la disposition flexbox */
+    justify-content: center; /* Centrer horizontalement le contenu */
+    align-items: center; /* Centrer verticalement le contenu */
+    flex-direction: column; /* Placer les éléments en colonne */
+}
+
+.about-content img {
+    width: 150px; /* Taille de l'image */
+    height: 150px; /* Taille de l'image */
+    border-radius: 50%; /* Rendre l'image ronde */
+    margin-top: 20px; /* Marge au-dessus de l'image */
+}
+
+.about-content .about-text {
+    text-align: center; /* Aligner le texte à gauche */
+}
+
+.about-content h2 {
+    margin-bottom: 10px; /* Marge inférieure pour le titre */
+}
+
+.about-content p {
+    line-height: 1.6; /* Espacement entre les lignes du texte */
+}
+
+/* Styles pour le menu déroulant */
+nav .menu {
+    background-color: #333; /* Couleur de fond du menu déroulant */
+    position: absolute; /* Position absolue pour le positionnement */
+    top: 100%; /* Position sous la barre de navigation */
+    right: 0; /* Alignement à droite */
+    padding: 10px; /* Espace intérieur du menu déroulant */
+    list-style-type: none; /* Supprimer les puces de liste */
+    display: none; /* Masquer le menu déroulant par défaut */
+}
+
+.menu-toggle {
+    cursor: pointer; /* Curseur pointer pour indiquer la cliquabilité */
+}
+
+.menu li {
+    margin: 10px 0; /* Marge autour des éléments de la liste */
+}
+
+.menu a {
+    color: #fff; /* Couleur du texte des liens */
+    text-decoration: none; /* Supprimer les soulignements des liens */
+}
+
+/* Afficher le menu déroulant lorsqu'il est ouvert */
+.menu.show {
+    display: block; /* Afficher le menu déroulant */
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
